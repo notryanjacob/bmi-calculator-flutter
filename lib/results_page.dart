@@ -12,7 +12,10 @@ class ResultsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BMI CALCULATOR'),
+        title: Text(
+          'BMI CALCULATOR',
+          style: TextStyle(color: Colors.black),
+        ),
         backgroundColor: kAppBarColor,
       ),
       body: Column(
@@ -22,11 +25,14 @@ class ResultsPage extends StatelessWidget {
           Expanded(
             child: Container(
               alignment: Alignment.bottomLeft,
-              child: Text(
-                'Your Result',
-                style: TextStyle(
-                  fontSize: 50.0,
-                  fontWeight: FontWeight.bold,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10.0),
+                child: Text(
+                  'Your Result',
+                  style: TextStyle(
+                    fontSize: 50.0,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
@@ -47,9 +53,13 @@ class ResultsPage extends StatelessWidget {
                     bmi,
                     style: kNumberTextStyle,
                   ),
-                  Text(
-                    statement,
-                    style: KStatementTextStyle,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      statement,
+                      style: KStatementTextStyle,
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                 ],
               ),

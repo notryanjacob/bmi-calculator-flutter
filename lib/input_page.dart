@@ -24,7 +24,10 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BMI CALCULATOR'),
+        title: Text(
+          'BMI CALCULATOR',
+          style: TextStyle(color: Colors.black),
+        ),
         backgroundColor: kAppBarColor,
       ),
       body: Column(
@@ -95,10 +98,12 @@ class _InputPageState extends State<InputPage> {
                   ),
                   SliderTheme(
                     data: SliderTheme.of(context).copyWith(
-                      thumbColor: Color(0xFFEB1555),
-                      activeTrackColor: Colors.white,
-                      inactiveTrackColor: Color(0xFF8D8E98),
-                      overlayColor: Color(0x29EB1555),
+                      //thumbColor: Color(0xFFEB1555),
+                      thumbColor: kBottomContainerColor,
+                      inactiveTrackColor: Colors.white,
+                      activeTrackColor: Color(0xFF8D8E98),
+                      //overlayColor: Color(0x29EB1555),
+                      overlappingShapeStrokeColor: Colors.lightBlue,
                       thumbShape:
                           RoundSliderThumbShape(enabledThumbRadius: 15.0),
                       overlayShape:

@@ -14,7 +14,7 @@ class IconContent extends StatelessWidget {
       children: <Widget>[
         Icon(
           genderIcon,
-          color: Colors.white,
+          color: kDarkGreyFillColor,
           size: 80.0,
         ),
         SizedBox(

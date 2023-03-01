@@ -1,3 +1,4 @@
+import 'package:bmi_calculator/constants.dart';
 import 'package:flutter/material.dart';
 
 class RoundIconButton extends StatelessWidget {
@@ -20,7 +21,7 @@ class RoundIconButton extends StatelessWidget {
         width: 56.0,
       ),
       shape: CircleBorder(),
-      fillColor: Color(0xFF4C4F5E),
+      fillColor: kDarkGreyFillColor,
     );
   }
 }
