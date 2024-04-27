@@ -5,7 +5,7 @@ class IconContent extends StatelessWidget {
   final IconData genderIcon;
   final String genderText;
 
-  IconContent({this.genderIcon, this.genderText});
+  IconContent({required this.genderIcon, required this.genderText});
 
   @override
   Widget build(BuildContext context) {

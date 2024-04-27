@@ -6,7 +6,7 @@ import 'bottom_button.dart';
 class ResultsPage extends StatelessWidget {
   final String result, bmi, statement;
   ResultsPage(
-      {@required this.result, @required this.bmi, @required this.statement});
+      {required this.result, required this.bmi, required this.statement});
 
   @override
   Widget build(BuildContext context) {
@@ -63,6 +63,7 @@ class ResultsPage extends StatelessWidget {
                   ),
                 ],
               ),
+              onPress: () {},
             ),
           ),
           Expanded(
